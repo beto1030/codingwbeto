@@ -25,29 +25,42 @@
 
         /* Media Query for low resolution  Tablets, Ipads */
         @media screen and (min-width: 481px) and (max-width: 767px) {
-            .flex-container {
+            .flex-container-tablet {
                 display: flex;
             }
         }
 
         /* Media Query for Tablets Ipads portrait mode */
         @media screen and (min-width: 768px) and (max-width: 1024px){
-            .flex-container {
+            .flex-container-tablet {
                 display: flex;
             }
         }
 
         /* Media Query for Laptops and Desktops */
         @media screen and (min-width: 1025px) and (max-width: 1280px){
-            .flex-container {
+            .flex-container-tablet {
+                display: flex;
+            }
+            .flex-container-desktop {
                 display: flex;
             }
         }
 
         /* Media Query for Large screens */
         @media screen and (min-width: 1281px) {
-            .flex-container {
+            .flex-container-tablet {
                 display: flex;
+            }
+            .flex-container-desktop {
+                display: flex;
+            }
+            .flex-container-xl-desktop {
+                display: flex;
+                flex-direction: row;
+            }
+            aside {
+                margin-left: 100px;
             }
         }
 
@@ -70,50 +83,52 @@
 <body>
     <main>
         <header>
-            Header Here
+            coding /w beto
         </header>
 
-        <div class="flex-container">
-            <section>
-              <h6><mark> HTML </mark></h6>
-              <code>
-                  &lt;!DOCTYPE html&gt;<br/>
-                  &lt;html lang="en"&gt;<br/>
-                  &lt;head&gt;<br/>
-                      &emsp;&emsp;&emsp;&emsp;&lt;meta charset="UTF-8"&gt;<br/>
-                      &emsp;&emsp;&emsp;&emsp;&lt;title&gt;&lt;/title&gt;<br/>
-                  &lt;/head&gt;<br/>
-                  &lt;body&gt;<br/>
-                  &lt;/body&gt;<br/>
-                  &lt;/html&gt;<br/>
-              </code>
-            </section>
+        <div class="flex-container-desktop">
+            <div class="flex-container-xl-desktop">
+            <div class="flex-container-tablet">
+                <section>
+                  <h6><mark> HTML </mark></h6>
+                  <code>
+                      &lt;!DOCTYPE html&gt;<br/>
+                      &lt;html lang="en"&gt;<br/>
+                      &lt;head&gt;<br/>
+                          &emsp;&emsp;&emsp;&emsp;&lt;meta charset="UTF-8"&gt;<br/>
+                          &emsp;&emsp;&emsp;&emsp;&lt;title&gt;&lt;/title&gt;<br/>
+                      &lt;/head&gt;<br/>
+                      &lt;body&gt;<br/>
+                      &lt;/body&gt;<br/>
+                      &lt;/html&gt;<br/>
+                  </code>
+                </section>
+                
+                <section>
+                  <h6><mark>CSS</mark></h6>
+                  <code>
+                      *{<br/>
+                      &emsp;&emsp;&emsp;margin: 0;<br/>
+                      &emsp;&emsp;&emsp;padding: 0;<br/>
+                      }<br/>
+                  </code>
+                </section>
+            </div>
             
-            <section>
-              <h6><mark>CSS</mark></h6>
-              <code>
-                  *{<br/>
-                  &emsp;&emsp;&emsp;margin: 0;<br/>
-                  &emsp;&emsp;&emsp;padding: 0;<br/>
-                  }<br/>
-              </code>
-            </section>
-        </div>
-
-        <div class="flex-container">
-            <section>
-              <h6><mark>PHP</mark></h6>
-              <code>
-                  &lt;?php<br/>
-                  &nbsp;Adipisicing impedit consequatur sed excepturi nisi?<br/>
-                  &nbsp;Ducimus possimus nemo quis distinctio ad Minima molestias<br/>
-                  &nbsp;non ut ad at Commodi quod nihil quod numquam enim, iure soluta<br/>
-                  &nbsp;sequi? Maxime tempora nihil ipsam officiis soluta, eius. Cum<br/>
-                  &nbsp;fugiat nesciunt accusantium perspiciatis sunt Dolorem fugiat tenetur<br/>
-                  &nbsp;cum quis nam sed Consequatur distinctio illo.<br/>
-                  ?&gt;
-              </code>
-            </section>
+            <div class="flex-container-tablet">
+                <section>
+                  <h6><mark>PHP</mark></h6>
+                  <code>
+                      &lt;?php<br/>
+                      &nbsp;Adipisicing impedit consequatur sed excepturi nisi?<br/>
+                      &nbsp;Ducimus possimus nemo quis distinctio ad Minima molestias<br/>
+                      &nbsp;non ut ad at Commodi quod nihil quod numquam enim, iure soluta<br/>
+                      &nbsp;sequi? Maxime tempora nihil ipsam officiis soluta, eius. Cum<br/>
+                      &nbsp;fugiat nesciunt accusantium perspiciatis sunt Dolorem fugiat tenetur<br/>
+                      &nbsp;cum quis nam sed Consequatur distinctio illo.<br/>
+                      ?&gt;
+                  </code>
+                </section>
             
             <section>
               <h6><mark>MYSQL</mark></h6>
@@ -122,13 +137,15 @@
               </code>
             </section>
         </div>
+        </div>
 
         <aside>
             Aside
         </aside>
+        </div><!-- desktop -->
 
         <footer>
-            Footer
+            twitter: beto101022 
         </footer>
 
     </main>
