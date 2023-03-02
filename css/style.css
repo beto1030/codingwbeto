@@ -1,22 +1,31 @@
 header,.intro,.skills {
-    height: 60vh;
-    display: flex;
+    height: 80vh;
     align-items: center;
     width: 50%;
     margin: auto;
-    justify-content: center;
     flex-direction: column;
     text-align: center;
 
 }
-header h1 {
+header {
+    padding-top: 15%;
+}
+h1 {
     line-height: 1.7;
+    font-size: 4em;
 }
 main {
     
 }
 section {
     padding: 0;
+}
+.skills p {
+   display: inline-block; 
+   margin: 0 10px;
+}
+p {
+    font-size: 3em;
 }
 
 mark {
@@ -34,6 +43,3 @@ mark {
   box-decoration-break: clone;
 }
 
-.intro {
-    height: 100vh;
-}
